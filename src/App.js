@@ -1,4 +1,5 @@
 import React from 'react';
+import HornedBeast from './components/HornedBeast';
 
 import Footer from './components/footer';
 import Header from './components/header';
@@ -11,6 +12,8 @@ class App extends React.Component {
 
         <Header />
         <Main />
+        <HornedBeast />
+        <HornedBeast />
         <Footer />
 
       </div>

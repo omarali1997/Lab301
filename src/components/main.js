@@ -1,14 +1,11 @@
 import React from 'react';
-import HornedBeast from './components/HornedBeast';
+// import HornedBeast from './components/HornedBeast';
 
 class Main extends React.Component {
     render() {
         return (
             <div>
-
-                <HornedBeast />
-                <HornedBeast />
-
+                {/* <HornedBeast /> */}
             </div>
         )
     }

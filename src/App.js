@@ -42,7 +42,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-
-
-// \\wsl.localhost\Ubuntu\home\omar\demo\my-first-app\src\components\Data.json

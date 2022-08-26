@@ -50,3 +50,6 @@ class UserModal extends React.Component {
 }
 
 export default UserModal;
+
+import React from 'react';
+import Button from 'react-bootstrap/Button';

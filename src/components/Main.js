@@ -1,12 +1,12 @@
 import React from 'react';
 import HornedBeast from './HornedBeast'
 import Row from 'react-bootstrap/Row';
-import UserModal from './SelectedBeast';
+
 
 class Main extends React.Component {
   getMain(title, image_url, description) {
     <UserModal title={title} Img={image_url} description={description} />;
-  }
+  
   render() {
     let arr;
     if (this.props.Number === "1") {
@@ -24,6 +24,7 @@ class Main extends React.Component {
     }
     return (
       <Row xs={1} md={5} className="g-4">
+
         {this.props.Data.map(user => (
           <HornedBeast
             id={user._id}

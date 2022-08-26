@@ -3,15 +3,21 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Card from 'react-bootstrap/Card';
 
-
-
-
-
 class UserModal extends React.Component {
+    state = { show: false };
+
+    showModal = () => {
+        this.setState({ show: true });
+    };
+
+    handleClose = () => {
+        this.setState({ show: false });
+    };
+
     render() {
         return (
             <>
-                <Modal show={this.props.showModal} onHide={this.props.handleClose}>
+                <Modal style={{ justifyContent: "center", alignItems: "center", textAlign: "center" }} show={this.props.showModal} onHide={this.props.handleClose}>
                     <Modal.Header closeButton>
                         <Modal.Title >{this.props.selBeast.Title}</Modal.Title>
                     </Modal.Header>
@@ -44,3 +50,6 @@ class UserModal extends React.Component {
 }
 
 export default UserModal;
+
+import React from 'react';
+import Button from 'react-bootstrap/Button';

@@ -1,9 +1,5 @@
 ># Lab-02
 
->## Feature #1: Display images
-#
-Number and name of feature: #1: Display images
-
 Estimate of time needed to complete: 2 hours
 
 Start time: 1:30
@@ -11,6 +7,7 @@ Start time: 1:30
 Finish time: 3:00
 
 Actual time needed to complete: 1 hours and halfe
+
 
 #
 >## Feature #2: Allow users to vote for their favorite beast
@@ -51,3 +48,4 @@ Start time: 1:30
 Finish time: 3:00
 
 Actual time needed to complete: 1 hours and halfe
+

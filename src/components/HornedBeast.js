@@ -2,6 +2,9 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+
+
 
 class HornedBeast extends React.Component {
 
@@ -10,7 +13,7 @@ class HornedBeast extends React.Component {
     this.state = {
       Favorites: " "
 
-    }
+    };
   }
 
   incrementFavorites = () => {
@@ -25,35 +28,29 @@ class HornedBeast extends React.Component {
 
   render() {
     return (
-      // <div>
-      //   <h2> {this.props.title} </h2>
-      //   <p> {this.props.description} </p>
-      //   <img src={this.props.imageUrl} alt='image' title={this.props.title} ></img>
-      //     <style jsx>
-      //       {`
-      //       img {
-      //         width: 600px;
-      //         height: 400px; 
-      //       }
-      //     `}
-      //     </style>
-      //     <p>Num Of Click: 0</p>
-      // </div>
-      <div>
-      <Col>
-        <Card style={{ width: '18rem' , borderColor :'purple'  }}>
 
-          <Card.Body>
+      <>
+        <Col>
+          <Card style={{ width: '18rem', borderColor: 'purple' }}>
+
+            <Card.Body>
+              <Card.Title>{this.props.id}</Card.Title>
             <Card.Title>{this.props.title}</Card.Title>
-            <Card.Img variant="top" src={this.props.imageUrl} onClick={this.incrementFavorites}  />
-            <Card.Text>{this.props.description}</Card.Text>
+            <Card.Img variant="top" src={this.props.img} alt="image" title={this.props.title} onClick={this.incrementFavorites} />
+            <Card.Text>
+                <p>keyword : {this.props.keyword}</p>
+                <p >horns :{this.props.horns}</p>
+                <p >{this.props.disc}</p>
+              </Card.Text>
             <Card.Text>
               Favorites: {this.state.Favorites}
             </Card.Text>
+            <Button variant="primary" onClick={()=>{this.props.myFunction(this.props.title)}} >select</Button>
+            
           </Card.Body>
         </Card>
       </Col>
-      </div>
+      </>
     )
   }
 

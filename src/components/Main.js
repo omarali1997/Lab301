@@ -23,9 +23,7 @@ class Main extends React.Component {
     return (
       <Row xs={1} md={5} className="g-4">
 
-        
         {this.props.Data.map(user => (
-          
           <HornedBeast 
           id={user._id} 
           title={user.title} 

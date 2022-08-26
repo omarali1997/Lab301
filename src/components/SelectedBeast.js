@@ -10,9 +10,6 @@ import Card from 'react-bootstrap/Card';
 class UserModal extends React.Component {
     render() {
         return (
-            //         <Button variant="primary" onClick={handleShow}>
-            //     Launch demo modal
-            //   </Button>
             <>
                 <Modal show={this.props.showModal} onHide={this.props.handleClose}>
                     <Modal.Header closeButton>

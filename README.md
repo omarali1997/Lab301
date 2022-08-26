@@ -9,6 +9,7 @@ Finish time: 3:00
 Actual time needed to complete: 1 hours and halfe
 
 
+
 #
 >## Feature #2: Allow users to vote for their favorite beast
 #

@@ -4,13 +4,6 @@ import Row from 'react-bootstrap/Row';
 import UserModal from './SelectedBeast';
 
 class Main extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    };
-  }
-
   getMain(title, image_url, description) {
     <UserModal title={title} Img={image_url} description={description} />;
   }

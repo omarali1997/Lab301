@@ -4,10 +4,9 @@ import Row from 'react-bootstrap/Row';
 
 
 class Main extends React.Component {
-  constructor(props) {
-    super(props);
-
-  }
+  getMain(title, image_url, description) {
+    <UserModal title={title} Img={image_url} description={description} />;
+  
   render() {
     let arr;
     if (this.props.Number === "1") {
